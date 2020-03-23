@@ -1,0 +1,63 @@
+@media (min-width: 768px) {
+  .home-container{
+    padding: 35px 0 32px 0;
+  }
+}
+@media (max-width: 768px) {
+  .home-container{
+    padding: 35px 32px 32px 32px;
+  }
+}
+.home-container {
+  background: url(https://ethanwp.oss-cn-shenzhen.aliyuncs.com/download/%E5%B7%A6%E4%B8%8B.png) no-repeat fixed bottom left,
+  url(https://ethanwp.oss-cn-shenzhen.aliyuncs.com/download/%E5%8F%B3%E4%B8%8A.png) no-repeat fixed top right,
+  #f0f2f7;
+  display: flex;
+  flex-direction: column;
+  max-width: 1080px;
+  justify-content: center;
+  p {
+    width: 100%;
+    text-align: left;
+  }
+  .title {
+    font-size: 39px;
+    line-height: 45px;
+    font-weight: 600;
+    color: #242C45;
+    margin-bottom: 42px;
+  }
+  .tip-point {
+    font-size: 21px;
+    line-height: 24px;
+    font-weight: 500;
+    color: #303A55;
+    margin-bottom: 21px;
+    display: flex;
+    align-items: center;
+    &:before {
+      margin-right: 12px;
+      content: "";
+      width: 24px;
+      height: 24px;
+      display: inline-block;
+      background: url("/assets/images/index/tip-icon.svg") no-repeat;
+      background-size: 100% 100%;
+    }
+  }
+  .description-title {
+    font-size: 32px;
+    line-height: 19px;
+    font-weight: 600;
+    color: #303A55;
+    margin-bottom: 42px;
+    margin-top: 32px;
+  }
+  .description-content {
+    font-size: 17px;
+    line-height: 30px;
+    font-weight: 400;
+    color: #616577;
+
+  }
+}

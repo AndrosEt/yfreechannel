@@ -1,0 +1,37 @@
+<div class="products-container" *ngIf="!isLoading">
+<!--<div class="products-container content&#45;&#45;canvas">-->
+  <!--<router-outlet></router-outlet>-->
+  <div class="item" *ngFor="let item of productItemList" >
+    <nz-card class="card" nzHoverable style="width:auto; max-width: 700px" [nzCover]="coverTemplate" >
+      <!--<nz-card-meta [nzTitle]=item.name></nz-card-meta>-->
+      <div class="active-content">
+        <!--<button nz-button nzType="primary" (click)="copyDetail(item.name)">Copy Detail</button>-->
+        <p class="product-name">{{item.name}}</p>
+        <div class="price-share">
+          <p class="product-price"><span *ngIf="item.price">$</span>{{item.price}}<span>{{item.fraction}}</span></p>
+
+          <div class="share-group">
+            <!--<a class="facebook-link" href="http://m.me/100029455444250" target="_blank"></a>-->
+            <a class="amazon-link" href="https://www.amazon.com/s?k={{item.name}}&ref=is_s"></a>
+            <!--<a class="amazon-link" href="com.amazon.mobile.shopping://www.amazon.com/s?k={{item.urlname}}"></a>-->
+
+            <!--<a class="amazon" href="https://www.amazon.com/s?k=bluetooth headphones&ref=is_s" target="_blank">sdfs</a>-->
+            <!--<a class="amazon" href="com.amazon.mobile.shopping://www.amazon.com/products/B00KWFCV32/" target="_blank">sdfs</a>-->
+            <!--<a class="amazon" href="fb-messenger://user/100029455444250" target="_blank">sdfs</a>-->
+
+            <!--<a class="amazon-link" href="com.amazon.mobile.shopping://www.amazon.com/products/s?k=bluetooth headphones" target="_blank"></a>-->
+            <!--<a class="amazon-link" href="https://www.amazon.com/s?k={{item.name}}&ref=is_s" target="_blank"></a>-->
+          </div>
+
+        </div>
+
+      </div>
+    </nz-card>
+    <ng-template #coverTemplate>
+      <img alt="example" [src]=item.download_url >
+    </ng-template>
+  </div>
+</div>
+<div *ngIf="isLoading" class="loading">
+  <nz-spin nzSimple [nzSize]="'large'" ></nz-spin>
+</div>

@@ -1,0 +1,27 @@
+<div class="header-container">
+  <div class="content">
+    <div class="header-left">
+      <a>U-TestClub</a>
+    </div>
+    <div class="header-right">
+      <div class="pc-switch">
+        <button nz-button nzType="default"  routerLink="/home" class="btn-home">Home</button>
+        <button nz-button nzType="default"  routerLink="/products">Products</button>
+      </div>
+      <i class="header-menu" (click)="openMenu()"></i>
+    </div>
+  </div>
+  <nz-modal
+    class="header-modal"
+    [nzStyle]="{ top: '0' }"
+    [(nzVisible)]="showMenu"
+    [nzFooter]="null"
+    (nzOnCancel)="handleCancel()"
+    nzMaskClosable='true'
+    >
+    <div class="menu-container">
+      <a href="/home">Home</a>
+      <a href="/products">Products</a>
+    </div>
+  </nz-modal>
+</div>

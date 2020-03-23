@@ -1,0 +1,137 @@
+.products-container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  background: url(https://ethanwp.oss-cn-shenzhen.aliyuncs.com/download/%E5%B7%A6%E4%B8%8B.png) no-repeat fixed bottom left,
+  url(https://ethanwp.oss-cn-shenzhen.aliyuncs.com/download/%E5%8F%B3%E4%B8%8A.png) no-repeat fixed top right,
+  #f0f2f7;
+
+  .item {
+    width: 350px;
+    margin: 20px;
+    height: 400px;
+    .card {
+      box-shadow: 0 0.5rem 1rem rgba(0, 36, 72, 0.13);
+      border-radius: 10px;
+
+    }
+  }
+  canvas {
+    z-index: -1;
+  }
+}
+
+.loading {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 100px;
+}
+
+::ng-deep .item .ant-card {
+  margin: 20px;
+  height: 370px;
+
+  .ant-card-cover {
+  }
+  .ant-card-body {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    align-items: center;
+    padding-top: 0;
+    .ant-card-meta {
+      width: 100%;
+    }
+    .active-content {
+      display: flex;
+      flex-direction: column;
+      width: 100%;
+      justify-content: space-between;
+      .product-name {
+        font-size: 16px;
+        font-weight: 600;
+        color: #111;
+        margin-bottom: 8px;
+      }
+      .price-share {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        .product-price {
+          font-size: 23px;
+          font-weight: 500;
+          color: #B12704;
+          width: fit-content;
+          span {
+            font-size: 12px;
+            font-weight: 400;
+            position: relative;
+            top: -7px;
+            margin-right: 2px;
+            &:nth-of-type(2) {
+              margin-left: 2px;
+            }
+          }
+        }
+        //button {
+        //  width: 50%;
+        //  font-size: 14px;
+        //}
+        .share-group {
+          display: flex;
+          flex-direction: row;
+          justify-content: flex-end;
+          width: fit-content;
+          .facebook-link::before {
+            display: flex;
+            align-items: center;
+            content: "";
+            width: 30px;
+            height: 30px;
+            background: url("/assets/images/index/icons8-facebook.svg") no-repeat;
+            background-size: 100% 100%;
+            margin-right: 15px;
+          }
+          .amazon-link::before {
+            margin-top: 2px;
+            display: flex;
+            align-items: center;
+            content: "";
+            width: 30px;
+            height: 30px;
+            background: url("/assets/images/index/icons8-amazon.svg") no-repeat;
+            background-size: 100% 100%;
+          }
+        }
+      }
+
+    }
+    .ant-card-meta-title {
+      /*使用你自己的字体*/
+      font-family: Open Sans, sans-serif;
+      font-size: 16px;
+      font-weight: 600;
+      color: black;
+    }
+    ///*使用前必须先定义*/
+    //@font-face {
+    //  /* 字体名称随意起 */
+    //  font-family: samba;
+    //  /*你下载字体所在的位置*/
+    //  src: url('../font/Samba.ttf');
+    //}
+  }
+}
+
+img {
+  border-radius: 10px 10px 0 0;
+  padding: 20px;
+  width: 308px;
+  height: 280px;
+  object-fit: contain;
+}
+

@@ -1,0 +1,19 @@
+.root-container {
+  background: url(https://ethanwp.oss-cn-shenzhen.aliyuncs.com/download/%E5%B7%A6%E4%B8%8B.png) no-repeat fixed bottom left,
+  url(https://ethanwp.oss-cn-shenzhen.aliyuncs.com/download/%E5%8F%B3%E4%B8%8A.png) no-repeat fixed top right,
+  #f0f2f7;
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  //overflow: overlay;
+  app-header {
+    width: 100%;
+    z-index: 10;
+  }
+  ::ng-deep app-tools {
+    width: 100% !important;
+  }
+}
+

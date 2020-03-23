@@ -1,0 +1,59 @@
+<div class="tools-container">
+  <textarea id="jsoninput">
+
+  </textarea>
+  <p>输入需要转化的json</p>
+  <button (click)="transformJson()">json转化srt</button>
+  <textarea id="jsonoutput"></textarea>
+
+
+
+
+  <textarea id="srtinput" style="margin-top: 30px">
+  </textarea>
+  <p>输入需要转化的srt</p>
+  <button (click)="transformSrt()">srt转化文本</button>
+  <textarea id="srtoutput">
+  </textarea>
+
+
+
+  <textarea id="autoinput" style="margin-top: 100px">
+  </textarea>
+  <p>输入需要转化的 Google auto 英文字幕</p>
+  <button (click)="transformAuto()">移除换行，数字，时间</button>
+  <textarea id="autooutput">
+  </textarea>
+
+
+
+  <textarea id="autoinput2" style="margin-top: 100px">
+  </textarea>
+  <p>输入需要转化的 Google auto 英文字幕2</p>
+  <button (click)="transformAuto2()">去除重复，将时间轴给到前一句</button>
+  <textarea id="autooutput2">
+  </textarea>
+
+
+  <textarea id="autoinput3" style="margin-top: 100px">
+  </textarea>
+  <p>输入需要转化的 Google auto 英文字幕3</p>
+  <button (click)="transformAuto3()">将多行文字转化为一行</button>
+  <textarea id="autooutput3">
+  </textarea>
+
+  <textarea id="autoinput4" style="margin-top: 100px">
+  </textarea>
+  <p>输入需要转化的 Google auto 英文字幕4</p>
+  <button (click)="transformAuto4()">保留换行，数字，时间</button>
+  <textarea id="autooutput4">
+  </textarea>
+
+  <textarea id="autoinput5" style="margin-top: 100px">
+  </textarea>
+  <p>输入需要转化的 transcript html字幕</p>
+  <button (click)="transformAuto5()">保留换行，数字，时间</button>
+  <textarea id="autooutput5">
+  </textarea>
+
+</div>
